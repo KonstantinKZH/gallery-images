@@ -1,0 +1,107 @@
+.gallery{
+    padding: 20px 0px;
+}
+
+.gallery-wrapper__download{
+    margin-bottom: 30px;
+}
+
+.input-type-file{
+    display: none;
+}
+
+.btn-download{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url('../../resources/icons/icons-download/gallery-icon.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    transition: all .3s linear;
+}
+
+.btn-download:active{
+    transform: scale(0.9);
+}
+
+.popup-content__slides_active{
+    display: block;
+}
+
+.gallery-wrapper__images{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.starting-message{
+    margin: 170px auto;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 62px;
+    color: #D3D3D3;
+
+}
+
+.gallery-wrapper__items{
+    position: relative;
+    transition: all .5s linear;
+}
+
+.gallery-wrapper__items-img{
+    display: block;
+    width: 450px;
+    height: 270px;
+    transition: all .5s linear;
+    opacity: 0.9;
+}
+
+.gallery-wrapper__items-name{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.gallery-wrapper__items-delete{
+    display: none;
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    transition: all .5s linear;
+}
+
+/* Анимация изображения */
+
+/* При наведении на изображение оно вместе скрестом уменьшается */
+.gallery-wrapper__items:hover{
+    filter: grayscale(50%);
+    transform: scale(0.98);
+}
+
+.gallery-wrapper__items-img:hover~ .gallery-wrapper__items-delete{
+    display: block;
+    width: 15px;
+    height: 15px;
+    filter: grayscale(50%);
+    right: 20px;
+    top: 20px;
+}
+
+/* При наведении на крест его уменьшенное состояние остаётся прежним */
+.gallery-wrapper__items-delete:hover{
+    display: block;
+    width: 15px;
+    height: 15px;
+    filter: grayscale(50%);
+    right: 20px;
+    top: 20px;
+}

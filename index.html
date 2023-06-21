@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pages/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@400;700&display=swap" rel="stylesheet">
+    <title>Галерея</title>
+</head>
+<body>
+    <div class="gallery">
+        <div class="container">
+            <div class="gallery-wrapper">
+                <div class="gallery-wrapper__download">
+                    <input id="iput-files" type="file" class="js-input-type-file input-type-file">
+                    <button class="js-btn-download btn-download"></button>
+                </div>
+
+                <div id="gallery" class="js-gallery-wrapper__images gallery-wrapper__images">
+                    <span class="starting-message">Изображений пока нет</span>
+                </div>
+
+                <!-- Модальное окно -->
+                <div  class="js-popup popup">
+                    <div class="js-popup-content popup-content">
+                        <img class="js-popup-content__img popup-content__img" alt="Изображение в модальном окне">
+                        <div class="js-popup-content__arrows popup-content__arrows">
+                            <button class="js-popup-content__arrows-prev popup-content__arrow popup-content__arrows-prev"></button>
+                            <button class="js-popup-content__arrows-next popup-content__arrow popup-content__arrows-next"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/btn-download.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/cloneHTMLTegs.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/delete-image.js"></script>
+</body>
+</html>

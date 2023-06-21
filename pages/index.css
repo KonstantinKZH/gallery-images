@@ -1,0 +1,7 @@
+@import "../block/gallery/gallery.css";
+@import "../block/container/container.css";
+@import "../block/popup/popup.css";
+@import "../block/slider/slider.css";
+
+@import "../vendor/reset.css";
+@import "../vendor/fonts.css";
